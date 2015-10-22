@@ -4,13 +4,13 @@ import java.util.List;
 
 public class ToA {
 
-    private List<AnotherElement> ids;
+    private List<AnotherSubElement> infos;
 
-    public List<AnotherElement> getIds() {
-        return ids;
+    public List<AnotherSubElement> getInfos() {
+        return infos;
     }
 
-    public void setIds(List<AnotherElement> ids) {
-        this.ids = ids;
+    public void setInfos(List<AnotherSubElement> infos) {
+        this.infos = infos;
     }
 }

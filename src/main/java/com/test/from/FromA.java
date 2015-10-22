@@ -1,16 +1,15 @@
 package com.test.from;
 
-import java.util.List;
-
 public class FromA {
 
-    private List<SubElement> elementList;
+    private SubElement element;
 
-    public List<SubElement> getElementList() {
-        return elementList;
+    public SubElement getElement() {
+        return element;
     }
 
-    public void setElementList(List<SubElement> elementList) {
-        this.elementList = elementList;
+    public void setElement(SubElement element) {
+        this.element = element;
     }
+
 }

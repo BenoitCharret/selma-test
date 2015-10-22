@@ -1,18 +1,21 @@
 package com.test;
 
 import com.test.from.FromA;
+import com.test.from.SubSubElement;
+import com.test.to.AnotherSubElement;
 import com.test.to.ToA;
 import fr.xebia.extras.selma.Field;
 import fr.xebia.extras.selma.Mapper;
 
 @Mapper(
         withCustomFields = {
-                @Field({"ids","elementList"}),
+                @Field({"element.subelementlist","infos"})
         },
-        withCustom = { SubElementMapper.class}
+        withCustom = {SubSubElementMapper.class}
 )
 
 public interface MyMapper {
 
     ToA asA(FromA fromA);
+
 }
