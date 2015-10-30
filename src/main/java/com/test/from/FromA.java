@@ -2,14 +2,13 @@ package com.test.from;
 
 public class FromA {
 
-    private SubElement element;
+    private String element;
 
-    public SubElement getElement() {
+    public String getElement() {
         return element;
     }
 
-    public void setElement(SubElement element) {
+    public void setElement(String element) {
         this.element = element;
     }
-
 }
