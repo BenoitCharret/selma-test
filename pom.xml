@@ -27,7 +27,7 @@
     <dependency>
       <groupId>fr.xebia.extras</groupId>
       <artifactId>selma-processor</artifactId>
-      <version>0.12</version>
+      <version>0.13-SNAPSHOT</version>
       <scope>provided</scope>
     </dependency>
 

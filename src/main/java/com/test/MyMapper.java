@@ -7,13 +7,15 @@ import fr.xebia.extras.selma.Mapper;
 
 @Mapper(
         withCustomFields = {
-                @Field({"element.subelementlist", "infos"})
+                @Field({"element", "infos"})
         },
-        withCustom = {SubSubElementMapper.class}
+        withCustom = {MySubMapper.class}
 )
 
 public interface MyMapper {
 
     ToA asA(FromA fromA);
+
+    ToA asA(FromA fromA,ToA toA);
 
 }
