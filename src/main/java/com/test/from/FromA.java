@@ -1,14 +1,16 @@
 package com.test.from;
 
+import java.util.Set;
+
 public class FromA {
 
-    private String element;
+    private Set<String> subElements;
 
-    public String getElement() {
-        return element;
+    public Set<String> getSubElements() {
+        return subElements;
     }
 
-    public void setElement(String element) {
-        this.element = element;
+    public void setSubElements(Set<String> subElements) {
+        this.subElements = subElements;
     }
 }

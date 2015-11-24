@@ -7,9 +7,9 @@ import fr.xebia.extras.selma.Mapper;
 
 @Mapper(
         withCustomFields = {
-                @Field({"element", "infos"})
-        },
-        withCustom = {MySubMapper.class}
+                @Field({"subElements", "infos"})}
+        ,
+        withCustom = {MyListMapper.class}
 )
 
 public interface MyMapper {

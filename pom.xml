@@ -12,6 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <selma.version>0.13</selma.version>
   </properties>
 
   <dependencies>
@@ -27,7 +28,7 @@
     <dependency>
       <groupId>fr.xebia.extras</groupId>
       <artifactId>selma-processor</artifactId>
-      <version>0.13-SNAPSHOT</version>
+      <version>${selma.version}</version>
       <scope>provided</scope>
     </dependency>
 
@@ -35,9 +36,21 @@
     <dependency>
       <groupId>fr.xebia.extras</groupId>
       <artifactId>selma</artifactId>
-      <version>0.12</version>
+      <version>${selma.version}</version>
     </dependency>
 
 
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
